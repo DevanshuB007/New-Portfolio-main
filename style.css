@@ -550,7 +550,10 @@ span {
     }
 }
 
-@media (max-width:895px) {
+/* Existing CSS */
+
+/* Add these new styles for the responsive menu */
+@media (max-width: 895px) {
     #menu-icon {
         display: block;
     }
@@ -561,25 +564,28 @@ span {
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgb(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.9); /* Use rgba for transparency */
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;   
+        display: none; /* Initially hide the menu */
+        flex-direction: column; /* Align menu items vertically */
+        align-items: center; /* Center the menu items */
     }
 
-    .navbar .active {
-        display: block;
+    .navbar.active {
+        display: flex; /* Display the menu when active */
     }
 
     .navbar a {
         display: block;
         font-size: 3rem;
-        margin: 3rem o;
+        margin: 3rem 0;
         color: white;
     }
 
+    /* Adjusting other elements for better responsiveness */
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
@@ -625,6 +631,4 @@ span {
     .services-container {
         grid-template-columns: repeat(1, 1fr);
     }
-
-
 }
