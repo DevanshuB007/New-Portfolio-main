@@ -339,7 +339,7 @@ span {
     background-color: var(--second-bg-color);
     position: absolute;
     width: calc(100% + 8px);
-    height: 100%;
+    height: 100%; 
     border-left: 3px solid var(--second-bg-color);
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
@@ -369,16 +369,18 @@ span {
 }
 
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
     align-items: center;
-    gap: 2.5rem;
+    /* gap: 2.5rem; */
 }
 
 .services-box {
     background-color: var(--main-color);
     color: black;
-    height: 250px;
+    height: 200px;
+    width: 500px;
+    margin-left: 25rem;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-  in-out;
@@ -542,7 +544,7 @@ span {
     }
 
     .services {
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
 
     .footer {
